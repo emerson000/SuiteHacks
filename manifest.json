@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "SuiteHacks",
+    "version": "1.0",
+    "description": "Tools and utilities for NetSuite administrators and power users.",
+    "icons": {
+        "48": "icons/suitehacks-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.netsuite.com/*"
+            ],
+            "js": [
+                "suitehacks.js"
+            ]
+        }
+    ]
+}
